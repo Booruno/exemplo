@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p><a id=link href="http://www.pudim.com.br/">Site</a></p>
+    <button onclick="diminuirFonte()"> Diminuir Fonte</button>
+    <button onclick="aumentarFonte()"> Aumentar Fonte</button>
+    <button onclick="alterarHref()"> Alterar Href</button>
+
+    <script>
+    function aumentarFonte() {
+        document.documentElement.style.fontSize = "30px";
+    }
+    function diminuirFonte() {
+        document.documentElement.style.fontSize = "10px";
+    }
+    function alterarHref() {
+        var elLink = document.getElementById('link');
+        elLink.href = "http://bing.com/";
+    }
+    </script>
+
+</body>
+</html>
